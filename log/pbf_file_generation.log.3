@@ -1,0 +1,105 @@
+|13:13:05 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:13:05 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|13:13:05 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:13:12 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:13:12 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|13:13:12 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:14:11 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|13:14:11 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|13:14:11 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|13:18:38 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:18:38 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|13:18:38 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:18:53 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> The TCP/IP connection to the host :1433, port 1433 has failed. Error: "null. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+											com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+											com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+											com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+											com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+											com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+											java.sql.DriverManager.getConnection(DriverManager.java:664)
+											java.sql.DriverManager.getConnection(DriverManager.java:270)
+											pbfgenerationservice.PbfDataManager.getConnection(PbfDataManager.java:58)
+											pbfgenerationservice.PbfDataManager.init(PbfDataManager.java:233)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:370)
+											pbfgenerationservice.PbfGenerationController.getInstance(PbfGenerationController.java:342)
+											pbfgenerationservice.PbfGenerationController.main(PbfGenerationController.java:485)
+											
+|13:18:53 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Executing query: SELECT retrieval_reference_nr, CASE WHEN dbo.usf_decrypt_pan(pan,pan_encrypted) !='0' THEN dbo.usf_decrypt_pan(pan,pan_encrypted)  ELSE PAN END pan,datetime_tran_local,card_acceptor_id_code,terminal_id,tran_amount_req FROM  post_tran t (NOLOCK, INDEX(ix_post_tran_9))  JOIN  (SELECT [date] recon_business_date FROM [get_dates_in_range](null,null))r ON  r.recon_business_date = t.recon_business_date  JOIN POST_TRAN_CUST c (NOLOCK, INDEX(pk_post_tran_cust))  ON  t.post_tran_cust_id = cust.post_tran_cust_id JOIN tbl_reward_outOfBand ob (NOLOCK) ON c.terminal_id =ob.terminal_id AND ob.is_kimono_term = 'N' OPTION(RECOMPILE,MAXDOP 6)
+|13:18:53 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> null
+											pbfgenerationservice.PbfDataManager.execute(PbfDataManager.java:69)
+											pbfgenerationservice.PbfDataManager.getPbfData(PbfDataManager.java:118)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:371)
+											pbfgenerationservice.PbfGenerationController.getInstance(PbfGenerationController.java:342)
+											pbfgenerationservice.PbfGenerationController.main(PbfGenerationController.java:485)
+											
+|13:18:57 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:18:57 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|13:18:57 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:18:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> Login failed for user 'officeadmin'. ClientConnectionId:d678d08e-053a-42ab-9589-3a275ac5a35c
+											com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:216)
+											com.microsoft.sqlserver.jdbc.TDSTokenHandler.onEOF(tdsparser.java:254)
+											com.microsoft.sqlserver.jdbc.TDSParser.parse(tdsparser.java:84)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.sendLogon(SQLServerConnection.java:2908)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.logon(SQLServerConnection.java:2234)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.access$000(SQLServerConnection.java:41)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection$LogonCommand.doExecute(SQLServerConnection.java:2220)
+											com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:5696)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:1715)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1326)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+											com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+											java.sql.DriverManager.getConnection(DriverManager.java:664)
+											java.sql.DriverManager.getConnection(DriverManager.java:270)
+											pbfgenerationservice.PbfDataManager.getConnection(PbfDataManager.java:58)
+											pbfgenerationservice.PbfDataManager.init(PbfDataManager.java:233)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:370)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:28)
+											pbfgenerationservice.PbfGenerationController$1.run(PbfGenerationController.java:420)
+											java.util.TimerThread.mainLoop(Timer.java:555)
+											java.util.TimerThread.run(Timer.java:505)
+											
+|13:18:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Executing query: SELECT retrieval_reference_nr, CASE WHEN dbo.usf_decrypt_pan(pan,pan_encrypted) !='0' THEN dbo.usf_decrypt_pan(pan,pan_encrypted)  ELSE PAN END pan,datetime_tran_local,card_acceptor_id_code,terminal_id,tran_amount_req FROM  post_tran t (NOLOCK, INDEX(ix_post_tran_9))  JOIN  (SELECT [date] recon_business_date FROM [get_dates_in_range](20160908,20160908))r ON  r.recon_business_date = t.recon_business_date  JOIN POST_TRAN_CUST c (NOLOCK, INDEX(pk_post_tran_cust))  ON  t.post_tran_cust_id = cust.post_tran_cust_id JOIN tbl_reward_outOfBand ob (NOLOCK) ON c.terminal_id =ob.terminal_id AND ob.is_kimono_term = 'N' OPTION(RECOMPILE,MAXDOP 6)
+|13:18:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> null
+											pbfgenerationservice.PbfDataManager.execute(PbfDataManager.java:69)
+											pbfgenerationservice.PbfDataManager.getPbfData(PbfDataManager.java:118)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:371)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:28)
+											pbfgenerationservice.PbfGenerationController$1.run(PbfGenerationController.java:420)
+											java.util.TimerThread.mainLoop(Timer.java:555)
+											java.util.TimerThread.run(Timer.java:505)
+											
+|13:19:00 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|13:19:00 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|13:19:00 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|13:21:23 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:21:23 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|13:21:23 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|13:21:38 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> The TCP/IP connection to the host :1433, port 1433 has failed. Error: "null. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+											com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+											com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+											com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+											com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+											com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+											java.sql.DriverManager.getConnection(DriverManager.java:664)
+											java.sql.DriverManager.getConnection(DriverManager.java:270)
+											pbfgenerationservice.PbfDataManager.getConnection(PbfDataManager.java:58)
+											pbfgenerationservice.PbfDataManager.init(PbfDataManager.java:233)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:370)
+											pbfgenerationservice.PbfGenerationController.getInstance(PbfGenerationController.java:342)
+											pbfgenerationservice.PbfGenerationController.main(PbfGenerationController.java:485)
+											
+|13:21:38 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Executing query: SELECT retrieval_reference_nr, CASE WHEN dbo.usf_decrypt_pan(pan,pan_encrypted) !='0' THEN dbo.usf_decrypt_pan(pan,pan_encrypted)  ELSE PAN END pan,datetime_tran_local,card_acceptor_id_code,terminal_id,tran_amount_req FROM  post_tran t (NOLOCK, INDEX(ix_post_tran_9))  JOIN  (SELECT [date] recon_business_date FROM [get_dates_in_range](null,null))r ON  r.recon_business_date = t.recon_business_date  JOIN POST_TRAN_CUST c (NOLOCK, INDEX(pk_post_tran_cust))  ON  t.post_tran_cust_id = cust.post_tran_cust_id JOIN tbl_reward_outOfBand ob (NOLOCK) ON c.terminal_id =ob.terminal_id AND ob.is_kimono_term = 'N' OPTION(RECOMPILE,MAXDOP 6)
+|13:21:38 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> null
+											pbfgenerationservice.PbfDataManager.execute(PbfDataManager.java:69)
+											pbfgenerationservice.PbfDataManager.getPbfData(PbfDataManager.java:118)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:371)
+											pbfgenerationservice.PbfGenerationController.getInstance(PbfGenerationController.java:342)
+											pbfgenerationservice.PbfGenerationController.main(PbfGenerationController.java:485)
+											

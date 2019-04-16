@@ -1,0 +1,172 @@
+|11:14:12 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> PBF File date  was not set
+|18:15:22 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|18:15:22 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|18:15:22 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|18:15:37 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> The TCP/IP connection to the host :1433, port 1433 has failed. Error: "null. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".
+											com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:190)
+											com.microsoft.sqlserver.jdbc.SQLServerException.ConvertConnectExceptionToSQLServerException(SQLServerException.java:241)
+											com.microsoft.sqlserver.jdbc.SocketFinder.findSocket(IOBuffer.java:2243)
+											com.microsoft.sqlserver.jdbc.TDSChannel.open(IOBuffer.java:491)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:1309)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:991)
+											com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:827)
+											com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1012)
+											java.sql.DriverManager.getConnection(DriverManager.java:664)
+											java.sql.DriverManager.getConnection(DriverManager.java:270)
+											pbfgenerationservice.PbfDataManager.getConnection(PbfDataManager.java:58)
+											pbfgenerationservice.PbfDataManager.init(PbfDataManager.java:220)
+											pbfgenerationservice.PbfDataManager.<init>(PbfDataManager.java:50)
+											pbfgenerationservice.PbfGenerationController.<init>(PbfGenerationController.java:333)
+											pbfgenerationservice.PbfGenerationController.getInstance(PbfGenerationController.java:313)
+											pbfgenerationservice.PbfGenerationController.main(PbfGenerationController.java:440)
+											
+|18:15:37 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> null
+											pbfgenerationservice.PbfGenerationController.readConfigFile(PbfGenerationController.java:99)
+											pbfgenerationservice.PbfGenerationController.main(PbfGenerationController.java:441)
+											
+|18:38:42 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|18:38:42 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|18:38:42 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|18:38:42 08, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log |SEVERE|> null
+											pbfgenerationservice.PbfGenerationController.readConfigFile(PbfGenerationController.java:99)
+											pbfgenerationservice.PbfGenerationController.main(PbfGenerationController.java:441)
+											
+|11:16:48 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|11:16:48 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|11:16:48 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|11:57:09 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|11:57:09 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|11:57:09 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:12:39 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:12:39 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:12:39 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:25:08 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:25:08 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:25:08 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:33:16 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:33:16 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:33:16 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:33:18 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:33:18 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:33:18 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:33:24 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:33:24 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:33:24 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:35:45 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:35:45 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:35:45 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:36:11 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:36:11 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:36:11 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:36:47 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:36:47 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:36:47 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:36:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:36:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:36:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:37:22 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:37:22 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:37:22 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:37:26 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:37:26 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:37:26 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:38:01 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:38:01 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:38:01 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:41:43 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:41:43 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:41:43 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:44:04 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:44:04 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:44:04 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:45:23 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:45:23 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:45:23 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:45:54 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:45:54 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:45:54 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:45:57 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:45:57 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:45:57 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:51:22 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:51:22 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:51:22 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:51:28 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:51:28 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:51:28 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:51:52 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:51:52 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Stopping PBF File Generation Service ... 
+|12:51:52 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ================================================
+|12:51:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|12:51:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|12:51:58 09, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Reading configuration file
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|21:22:16 10, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Starting PBF File Generation Service....
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> ========================================
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Reading configuration file
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
+|07:20:45 11, Sep,2016 | PbfFileGenService | pbfgenerationservice.PbfLogger | log | INFO|> Settings successfully loaded.
